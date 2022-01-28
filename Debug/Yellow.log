@@ -1,0 +1,35 @@
+﻿  database.cpp
+C:\Users\Пользователь\source\repos\Yellow\Yellow\database.cpp(64,1): error C2678: бинарный "==": не найден оператор, принимающий левый операнд типа "const _Ty2" (или приемлемое преобразование отсутствует)
+          with
+          [
+              _Ty2=std::vector<std::string,std::allocator<std::string>>
+          ]
+C:\Users\Пользователь\source\repos\Yellow\Yellow\date.h(24,6): message : может быть "bool operator ==(const Date &,const Date &)"
+C:\Users\Пользователь\source\repos\Yellow\Yellow\database.cpp(64,1): message : при попытке сопоставить список аргументов "(const _Ty2, const std::basic_string<char,std::char_traits<char>,std::allocator<char>>)"
+          with
+          [
+              _Ty2=std::vector<std::string,std::allocator<std::string>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\include\xutility(196): message : выполняется компиляция ссылки на экземпляр шаблон функции "auto Database::RemoveIf::<lambda_6d1f9601214d7503f40ce2230841531f>::operator ()<std::pair<const Date,std::vector<std::string,std::allocator<std::string>>>>(const std::pair<const Date,std::vector<std::string,std::allocator<std::string>>> &) const"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\include\algorithm(6028): message : выполняется компиляция ссылки на экземпляр шаблон функции "decltype(auto) std::_Ref_fn<_Pr>::operator ()<std::pair<const Date,std::vector<std::string,std::allocator<std::string>>>&>(std::pair<const Date,std::vector<std::string,std::allocator<std::string>>> &)"
+          with
+          [
+              _Pr=Database::RemoveIf::<lambda_6d1f9601214d7503f40ce2230841531f>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\include\algorithm(6057): message : выполняется компиляция ссылки на экземпляр шаблон функции "_BidIt std::_Stable_partition_unchecked<std::_Tree_unchecked_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const Date,std::vector<std::string,std::allocator<std::string>>>>>>,std::_Ref_fn<_Pr>>(_BidIt,_BidIt,std::_Ref_fn<_Pr>)"
+          with
+          [
+              _BidIt=std::_Tree_unchecked_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const Date,std::vector<std::string,std::allocator<std::string>>>>>>,
+              _Pr=Database::RemoveIf::<lambda_6d1f9601214d7503f40ce2230841531f>
+          ]
+C:\Users\Пользователь\source\repos\Yellow\Yellow\database.cpp(65): message : выполняется компиляция ссылки на экземпляр шаблон функции "_BidIt std::stable_partition<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const Date,std::vector<std::string,std::allocator<std::string>>>>>>,Database::RemoveIf::<lambda_6d1f9601214d7503f40ce2230841531f>>(_BidIt,_BidIt,_Pr)"
+          with
+          [
+              _BidIt=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const Date,std::vector<std::string,std::allocator<std::string>>>>>>,
+              _Pr=Database::RemoveIf::<lambda_6d1f9601214d7503f40ce2230841531f>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\include\algorithm(6028,1): error C2171: !: недопустимо для операндов типа "void"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\include\algorithm(6028,1): error C2451: условное выражение типа "void" является недопустимым
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\include\algorithm(6028,13): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\include\algorithm(6041,1): error C2451: условное выражение типа "void" является недопустимым
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\include\algorithm(6041,18): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
